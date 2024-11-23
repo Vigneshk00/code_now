@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.hid{
+    display: none;
+}
+
+.main {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Grow to fill available space */
+    flex-direction: column;
+}
+
+.r-container {
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.r-container:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.info {
+    margin-bottom: 15px;
+    color: rgb(40, 39, 39);
+    text-transform: capitalize;
+}
+
+.info span {
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.accept {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.accept:hover {
+    background-color: #45a049;
+}
+
+.reject {
+    background-color: #f44336;
+    color: white;
+}
+
+.reject:hover {
+    background-color: #d32f2f;
+}
+
+.footer {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.requests-text{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: black;
+}
+.req{
+    background-color: #f2f2f2;
+}
+
+.button-disabled {
+    animation: button-disable-animation 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*.r-container {
+  animation: fadeOut 0.5s forwards;
+}
+*/

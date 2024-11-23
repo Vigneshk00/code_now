@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Application Review</title>
+    <style>
+        .main {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .info {
+            margin-bottom: 15px;
+        }
+
+        .info span {
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .accept {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .accept:hover {
+            background-color: #45a049;
+        }
+
+        .reject {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .reject:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <div class="info"><span>Course:</span> Example Course</div>
+        <div class="info"><span>Student Name:</span> John Doe</div>
+        <div class="info"><span>Education Background:</span> Bachelor's in Computer Science</div>
+        <div class="info"><span>Employment Status:</span> Employed</div>
+        <div class="info"><span>Purpose:</span> Enhance skills in web development</div>
+        <div class="buttons">
+            <button class="accept">Accept</button>
+            <button class="reject">Reject</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="info"><span>Course:</span> Another Course</div>
+        <div class="info"><span>Student Name:</span> Jane Smith</div>
+        <div class="info"><span>Education Background:</span> Master's in Business Administration</div>
+        <div class="info"><span>Employment Status:</span> Unemployed</div>
+        <div class="info"><span>Purpose:</span> Career change to marketing</div>
+        <div class="buttons">
+            <button class="accept">Accept</button>
+            <button class="reject">Reject</button>
+        </div>
+    </div>
+    </div>
+
+    <!-- Add more containers as needed -->
+
+    <script>
+        // JavaScript functionality can be added here if needed
+    </script>
+</body>
+</html>

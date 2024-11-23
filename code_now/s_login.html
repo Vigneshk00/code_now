@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login</title>
+      <link rel="stylesheet" href="register-style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/bootsnav.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   </head>
+   <body>
+    <header>
+        <section class="top-area">
+            <div class="header-area">
+                <!-- Start Navigation -->
+                <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+    
+                    <div class="container">
+    
+                        <!-- Start Header Navigation -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand">code<span>now</span></a>
+    
+                        </div><!--/.navbar-header-->
+                    </div><!--/.container-->
+                </nav><!--/nav-->
+                <!-- End Navigation -->
+            </div><!--/.header-area-->
+        </section><!-- /.top-area-->
+        </header>
+        <!-- top-area End -->
+
+        <!-- student register -->
+        <div class="wrapper">
+            <div class="std-title">
+               Login as Student
+            </div>
+            <form action="/student-login" method="post">
+                <div class="field">
+                    <input type="text" name="student_username" required>
+                    <label>Username</label>
+                </div>
+               <div class="field">
+                  <input type="password" name="student_password" required>
+                  <label>Password</label>
+               </div><br>
+               <div id="invalid" class="invalid"></div>
+               <div class="field">
+                  <input type="submit" value="Login">
+               </div>
+               <div class="signup-link">
+                  <a href="/logintutor">Login as Tutor</a><br><br>
+                  Not a member? <a href="/signup">Register now</a>
+               </div>
+            </form>
+         </div>
+
+   </body>
+</html>

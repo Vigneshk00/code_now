@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | CodeNow</title>
+    <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+<div class="checkout-panel">
+    <div class="panel-body">
+
+      <!-- Billing Information -->
+      <div class="billing-info">
+        <h3>Billing Details</h3>
+        <table class="billing-table">
+          <tr>
+            <th>Course Name</th>
+            <td>Introduction to Programming</td>
+          </tr>
+          <tr>
+            <th>Price</th>
+            <td>$199.99</td>
+          </tr>
+          <tr>
+            <th>Billing Company Name</th>
+            <td>CodeNow Inc.</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="payment-method">
+        <label for="card" class="method card">
+          <div class="card-logos">
+            <img src="https://designmodo.com/demo/checkout-panel/img/visa_logo.png" alt="Visa"/>
+            <img src="https://designmodo.com/demo/checkout-panel/img/mastercard_logo.png" alt="MasterCard"/>
+          </div>
+   
+          <div class="radio-input">
+            <input id="card" type="radio" name="payment">
+            Pay with credit card
+          </div>
+        </label>
+   
+        <label for="paypal" class="method paypal">
+          <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png" alt="PayPal"/>
+          <div class="radio-input">
+            <input id="paypal" type="radio" name="payment">
+            Pay with PayPal
+          </div>
+        </label>
+      </div>
+   
+      <div class="input-fields">
+        <div class="column-1">
+          <label for="cardholder">Cardholder's Name</label>
+          <input type="text" id="cardholder" />
+   
+          <div class="small-inputs">
+            <div>
+              <label for="date">Valid thru</label>
+              <input type="text" id="date"/>
+            </div>
+   
+            <div>
+              <label for="verification">CVV / CVC *</label>
+              <input type="password" id="verification"/>
+            </div>
+          </div>
+   
+        </div>
+        <div class="column-2">
+          <label for="cardnumber">Card Number</label>
+          <input type="password" id="cardnumber"/>
+   
+          <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <button class="btn back-btn">Complete Payment</button>
+        <!-- <a href="/payment-success" class="btn back-btn">Complete Payment</a> -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
